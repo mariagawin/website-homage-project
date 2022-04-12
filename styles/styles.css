@@ -1,0 +1,262 @@
+@font-face {
+	font-family: 'segoe-ui';
+	src: url(../font/segoe-ui/Segoe\ UI.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'segoe-ui-bold';
+	src: url(../font/segoe-ui/Segoe\ UI\ Bold.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'segoe-ui-italic';
+	src: url(../font/segoe-ui/Segoe\ UI\ Italic.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'segoe-ui-bold-italic';
+	src: url(../font/segoe-ui/Segoe\ UI\ Bold\ Italic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(../font/roboto/Roboto-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-medium';
+	src: url(../font/roboto/Roboto-Medium.ttf);
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url(../font/roboto/Roboto-Bold.ttf);
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-extrabold';
+	src: url(../font/roboto/Roboto-Black.ttf);
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-light';
+	src: url(../font/roboto/Roboto-Light.ttf);
+	font-weight: 100;
+	font-style: normal;
+}
+
+:root {
+	--btn-color: hsl(277, 90%, 64%);
+	--watch-link: hsl(194, 69%, 51%);
+	--hover-watch-link: hsl(196, 52%, 45%);
+	--text-color: hsl(0, 0%, 25%);
+}
+
+body {
+	color: var(--text-color);
+	font-family: "Roboto-light", sans-serif;
+}
+
+main {
+	padding-right: 0.75em;
+	padding-left: 0.75em;
+}
+
+body > header {
+	background-color: hsl(0, 100%, 100%);
+	display: flex;
+	justify-content: space-between;
+	padding: 0.8em 0.75em 0.3em;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+body > header .cta a {
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0.85em 1.5em;
+}
+
+body > header .cta a:nth-child(1) {
+	
+}
+
+body > header .cta a:nth-child(1):hover {
+	border: 1px solid var(--hover-watch-link);
+	border-radius: 2.5px;
+}
+
+body > header .cta a:nth-child(2) {
+	background-color: var(--btn-color);
+	border: 1px solid var(--btn-color);
+	border-radius: 2.5px;
+	color: hsl(0, 100%, 100%);
+	font-family: "Roboto-extrabold", sans-serif;
+}
+
+header div.second-header > h1 {
+	color: hsl(55, 91%, 64%);
+	font-family: 'Roboto-bold', sans-serif;
+	font-size: 4.6rem;
+	margin: 0;
+	padding: 0;
+}
+
+header .logo {
+	width: 67px;
+}
+
+nav {
+	display: none;
+}
+
+article > header .dropdown {
+	display: none;
+}
+
+p {
+	font-family: "Roboto-light", sans-serif;
+	line-height: 1.37em;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+a:hover h3,
+footer a:hover {
+	text-decoration: underline;
+}
+
+.neighborhood img,
+.hbo-ad img,
+footer .hbomax-ad img {
+	width: 100%;
+}
+
+article > header div.page-navigation p {
+	text-align: center;
+	font-size: 0.8em;
+	padding: 0.3em;
+	margin-bottom: 0.6em;
+}
+
+section.intro a.main-img img {
+	margin-bottom: 17px;
+}
+
+section.intro a.main-img,
+section.first-ep a.first-ep-img,
+section.first-ep a.first-ep-img {
+	position: relative;
+}
+
+section.intro a.main-img div.play-btn,
+section.intro a.main-img div.video-description,
+section.first-ep a.first-ep-img div.play-btn,
+section.first-ep a.first-ep-img div.ep-description {
+	position: absolute;
+	top: 85px;
+	left: 22px;
+}
+
+section.intro a.main-img div.video-description,
+section.first-ep a.first-ep-img div.ep-description {
+	color: hsl(0, 100%, 100%);
+	line-height: 1em;
+	top: 86px;
+	left: 66px;
+}
+
+section.intro a.main-img div.video-description p,
+section.first-ep a.first-ep-img div.ep-description p {
+	font-family: "Roboto-medium", sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1.1em;
+	padding: 0;
+	margin: 0;
+}
+
+section.intro a.main-img div.video-description p:nth-child(2),
+section.first-ep a.first-ep-img div.ep-description p:nth-child(2) {
+	font-family: "Roboto-extrabold", sans-serif;
+	font-size: 1.1em;
+	padding: 0;
+	margin: 0;
+}
+
+.play-btn {
+	width: 7.8%;
+}
+
+.play-btn img {
+	stroke: hsl(0, 100%, 100%);
+}
+
+section.intro > p {
+	font-family: "Roboto-bold", sans-serif;
+	padding-bottom: 0.6em;
+}
+
+section.intro div.series-description h2 {
+	font-family: "Roboto-bold", sans-serif;
+	font-size: 1.9em;
+}
+
+section.intro div.series-description p:nth-child(2) {
+	font-size: 0.8em;
+}
+
+a.watch-now {
+	background-color: var(--btn-color);
+	border: 1px solid var(--btn-color);
+	border-radius: 2.5px;
+	color: hsl(0, 100%, 100%);
+	font-family: "Roboto-extrabold", sans-serif;
+	font-size: 0.8em;
+	padding: 11px;
+}
+
+a.watch-now img {
+	width: 59px;
+}
+
+div.series-description p:nth-child(4) {
+	margin-top: 3.5em;
+	margin-bottom: 3.5em;
+}
+
+/* section.first-ep a.first-ep-img {
+	position: relative;
+} */
+/* 
+section.first-ep a.first-ep-img div.play-btn,
+section.first-ep a.first-ep-img div.ep-description {
+	position: absolute;
+	top: 85px;
+	left: 22px;
+} */
+
+footer {
+	background-color: hsl(0, 0%, 25%);
+	color: hsl(60, 100%, 100%);
+	padding: 0;
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" aria-hidden="true">
+	<defs>
+		<ellipse id="a" cx="25.086" cy="24.795" rx="24.434" ry="24.614"></ellipse>
+		<mask id="b" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="48.868"
+			height="49.227" fill="white">
+			<use href="#a"></use>
+		</mask>
+	</defs>
+	<g fill="none" fill-rule="evenodd">
+		<path fill="white" d="M19.357 33.385V16.977l14.107 8.204z"></path>
+		<use stroke="white" mask="url(#b)" stroke-width="4" fill="transparent" href="#a"></use>
+	</g>
+</svg>
