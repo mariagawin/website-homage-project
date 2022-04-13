@@ -34,6 +34,13 @@
 }
 
 @font-face {
+	font-family: 'Roboto-light';
+	src: url(../font/roboto/Roboto-Light.ttf);
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'Roboto-medium';
 	src: url(../font/roboto/Roboto-Medium.ttf);
 	font-weight: 600;
@@ -51,13 +58,6 @@
 	font-family: 'Roboto-extrabold';
 	src: url(../font/roboto/Roboto-Black.ttf);
 	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Roboto-light';
-	src: url(../font/roboto/Roboto-Light.ttf);
-	font-weight: 100;
 	font-style: normal;
 }
 
@@ -94,7 +94,7 @@ body > header .cta a {
 	padding: 0.85em 1.5em;
 }
 
-body > header .cta a:nth-child(1) {
+body > header div.cta a:nth-child(1) {
 	
 }
 
@@ -143,6 +143,13 @@ a:hover {
 a:hover h3,
 footer a:hover {
 	text-decoration: underline;
+}
+
+section > h2 {
+	font-family: "Roboto-bold", sans-serif;
+	font-size: 1.9em;
+	margin: 1.6em auto;
+	text-align: center;
 }
 
 .neighborhood img,
@@ -254,6 +261,103 @@ section.first-ep a.first-ep-img div.ep-description {
 	top: 85px;
 	left: 22px;
 } */
+
+section.first-ep div.first-ep-cta h2 {
+	font-family: "Roboto-bold", sans-serif;
+	font-size: 24px;
+	margin: 0.8em auto 0.5em ;
+}
+
+section.first-ep div.first-ep-cta a {
+	color: var(--watch-link);
+	font-family: "Roboto-bold", sans-serif;
+	font-size: 0.8em;
+}
+
+section.first-ep div.first-ep-cta a:hover {
+	color: var(--hover-watch-link);
+}
+
+section.up-to-date a {
+	display: inline-block;
+}
+
+section.up-to-date p {
+	margin: 0;
+}
+
+section.up-to-date a.ep-6 p:nth-child(2),
+section.up-to-date a.ep-7 p:nth-child(2) {
+	font-size: 0.77em;
+	margin: 1.5em auto 0.7em;
+}
+
+section.up-to-date a.ep-6 h3,
+section.up-to-date a.ep-7 h3 {
+	font-family: "Roboto-extrabold", sans-serif;
+	font-size: 1.1em;
+	margin-bottom: 0.3em;
+}
+
+section.up-to-date a.ep-6 p:nth-child(4) {
+	margin-bottom: 0.6em;
+}
+
+section.up-to-date div.watch-ep {
+	color: var(--watch-link);
+	font-family: "Roboto-bold", sans-serif;
+	font-size: 0.8em;
+	margin-bottom: 2.4em;
+}
+
+/*	
+TODO: resolve hover on a.ep-6 changes color font to watch-ep
+section.up-to-date a.ep-6:hover div a {
+	color: var(--hover-watch-link);
+} */
+
+section.up-to-date a.ep-7 div.ep-7-img,
+section.extras a.extra-card div.extra-img,
+section.bts a.bts-card div.bts-img {
+	position: relative;
+}
+
+section.up-to-date a.ep-7 div.ep-7-img img:nth-child(2), 
+section.up-to-date a.ep-7 div.ep-7-img p,
+section.extras a.extra-card div.extra-img img:nth-child(2),
+section.extras a.extra-card div.extra-img p,
+section.bts a.bts-card div.bts-img img:nth-child(2),
+section.bts a.bts-card div.bts-img p {
+	position: absolute;
+}
+
+/* TODO: shade/color of button */
+section.up-to-date a.ep-7 div.ep-7-img img:nth-child(2),
+section.extras a.extra-card div.extra-img img:nth-child(2),
+section.bts a.bts-card div.bts-img img:nth-child(2) {
+	top: 165px;
+	left: 15px;
+	width: 18%;
+}
+
+section.up-to-date a.ep-7 div.ep-7-img p,
+section.extras a.extra-card div.extra-img p,
+section.bts a.bts-card div.bts-img p {
+	background-color: black;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.8em;
+	padding: 0.2em 0.4em;
+	margin-bottom: 0;
+	bottom: 0;
+	right: 0;
+}
+
+div.neighborhood {
+	margin-top: 4.5em;
+	margin-left: -0.75em;
+	margin-right: -0.75em;
+}
 
 footer {
 	background-color: hsl(0, 0%, 25%);
